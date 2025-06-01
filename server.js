@@ -90,7 +90,7 @@ app.all("*", (req, res) => {
     res.json({ message: "404 : Page Not Found" });
   } else {
     // TEXT RESPONSE
-    req.type("txt").send("404 : Page Not Found");
+    res.type("txt").send("404 : Page Not Found");
   }
 });
 
